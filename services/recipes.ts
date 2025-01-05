@@ -6,7 +6,7 @@ interface RecipesResponse {
 }
 
 export async function getRecipes(): Promise<RecipesResponse["recipes"]> {
-  const { data } = await primaryAxios.get<RecipesResponse>(`recipes?limit=0`);
+  const { data } = await primaryAxios.get<RecipesResponse>(`recipes`);
   return data.recipes;
 }
 
