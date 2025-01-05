@@ -5,5 +5,5 @@ export const primaryAxios = axios.create({
 })
 
 export const secondaryAxios = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://recipes-psi-six.vercel.app',
 })
