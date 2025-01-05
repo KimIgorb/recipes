@@ -6,7 +6,7 @@ import Image from "next/image";
 export function GoogleButton() {
   return (
     <button
-      onClick={() => signIn("google", { callbackUrl: "https://recipes-psi-six.vercel.app/recipes" })}
+      onClick={() => signIn("google", { callbackUrl: "/recipes" })}
       className="flex items-center p-4 gap-4 shadow-lg font-semibold border border-gray-200 mb-3 hover:shadow-current transition-shadow duration-500"
     >
       <Image src="/google.svg" width={30} height={30} alt="google icon" />
@@ -18,7 +18,7 @@ export function GoogleButton() {
 export function GithubButton() {
   return (
     <button
-      onClick={() => signIn("github", { callbackUrl: "https://recipes-psi-six.vercel.app/recipes" })}
+      onClick={() => signIn("github", { callbackUrl: "/recipes" })}
       className="flex items-center p-4 gap-4 shadow-lg font-semibold border border-gray-200 hover:shadow-current transition-shadow duration-500"
     >
       <Image src="/github.svg" width={30} height={30} alt="github icon" />
